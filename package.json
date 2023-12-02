@@ -1,0 +1,16 @@
+{
+  "name": "InfiniteImprint-DesignCo",
+  "version": "1.0.0",
+  "description": "Landing page for InfiniteImprint Design Co Website",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "node-sass resources/sass/main.scss resources/css/style.css",
+    "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
+  },
+  "author": "Anna",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  }
+}

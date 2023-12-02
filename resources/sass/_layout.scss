@@ -1,0 +1,260 @@
+.header {
+	width:100%;
+	height:90vh;
+	background-color:var(--color-black);
+	background-image:url(header-img-2.png);
+	background-size: 36.5%;
+	background-position:88% 48%;
+	background-repeat:no-repeat;
+
+	@media only screen and (max-width: $breakpoint-1060) {
+		height: 50vh;
+		background-position: 95% 48%;
+	}
+
+	&__bar {
+		display:flex;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		position: relative;
+		left: 20px;
+		height:12rem;
+		width:auto;
+
+		@media only screen and (max-width: $breakpoint-832) {
+			height: 6rem;
+		}
+	}
+
+	&__main-nav {
+		list-style:none;
+		display:flex;
+		flex-wrap:wrap;
+		flex:0 0 1px;
+		margin: 5rem 5rem 0 0;
+
+		@media only screen and (max-width: $breakpoint-832) {
+			margin: 2rem 5rem 0 0;
+		}
+
+		@media only screen and (max-width: $breakpoint-400) {
+			margin: 2rem 1rem 0 0;
+		}
+
+		& li {
+			margin-left:4rem;
+
+			@media only screen and (max-width: $breakpoint-832) {
+				margin-left: 3rem;
+			}
+
+			& a:link,
+			& a:visited {
+				color:var(--color-white);
+				text-decoration:none;
+				font-size:1.4rem;
+				text-transform:uppercase;
+				font-weight: 600;
+				display:block;
+				padding-bottom:0.8rem;
+				border-bottom:2px solid transparent;
+				-webkit-transition: border-bottom 0.4s;
+				transition: border-bottom 0.4s;
+
+				@media only screen and (max-width: $breakpoint-832) {
+					font-size:1rem;
+				}
+			}
+
+			& a:hover,
+			& a:active {
+				border-bottom:2px solid var(--color-primary);
+			}
+		}
+	}
+
+	&__box {
+		width: 80%;
+		position: relative;
+		top: 4rem;
+		left: 13rem;
+		text-align:left;
+
+		@media only screen and (max-width: $breakpoint-1060) {
+			left: 6rem;
+		}
+
+		@media only screen and (max-width: $breakpoint-1000) {
+			top: 2rem;
+			left: 5rem;
+		}
+
+		@media only screen and (max-width: $breakpoint-600) {
+			// top: 7.2rem;
+			left: 3rem;
+		}
+	}
+
+	&__text-box h1 { 
+		font-family: "eight", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 7rem;
+		width: 45%;
+		color:var(--color-primary);
+		letter-spacing:normal;
+		
+		@media only screen and (max-width: $breakpoint-832) {
+			font-size: 3rem;
+		}
+
+		@media only screen and (max-width: $breakpoint-400) {
+			font-size: 2.2rem;
+		}
+	}
+
+	&__text-box h2 { 
+		font-size: 3.5rem;
+		color: var(--color-white);
+		width: 65%;
+		font-weight: 500;
+		margin-bottom: 4rem;
+
+		@media only screen and (max-width: $breakpoint-832) {
+			font-size: 2.2rem;
+			margin-bottom: 2.5rem;
+		}
+
+		@media only screen and (max-width: $breakpoint-600) {
+			width: 45%;
+		}
+
+		@media only screen and (max-width: $breakpoint-400) {
+			font-size: 1.4rem;
+			margin-bottom: 1.5rem;
+			width: 45%;
+		}
+	}
+}
+
+//FOR EACH SECTION
+
+.section-header h2 {
+	color:var(--color-primary);
+	font-size:2.4rem;
+	text-transform:uppercase;
+	letter-spacing:1.5px;
+	margin-bottom:1.2rem;
+
+	@media only screen and (max-width: $breakpoint-600) {
+		font-size: 1.8rem;
+	}
+}
+
+.section-header h1 {
+	color:var(--color-darkgrey);
+	font-size:4.8rem;
+	text-transform:capitalize;
+	margin-bottom: 4rem;
+
+	@media only screen and (max-width: $breakpoint-1060) {
+		font-size: 4rem;
+	}
+	
+	@media only screen and (max-width: $breakpoint-600) {
+		font-size: 2.4rem;
+	}
+}
+
+.section-services, .section-team, .section-portfolio, .section-contact, .section-testimonials {
+	background-color:var(--color-white);
+	text-align:center;
+	padding-bottom:8rem;
+}
+
+.section-team, .section-testimonials {
+	background-color:var(--color-black);
+}
+
+.section-cta {
+	padding: 3rem 3rem 5.9rem;
+}
+
+.services-p {
+	font-size: 2.4rem;
+    font-weight: 400;
+    margin: 3rem 8rem 5rem;
+    text-align: left;
+
+	@media only screen and (max-width: $breakpoint-600) {
+		font-size: 1.6rem;
+		font-weight: 400;
+		margin: 3rem 4rem 5rem;
+		text-align: justify;
+	}
+}
+
+.footer {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	padding: 3rem 12rem 3rem 4rem;
+	align-items:baseline;
+	align-items: center;
+    background-color: #191919;
+
+	@media only screen and (max-width: $breakpoint-1000) {
+		justify-content: center;
+		padding: 3rem 0;
+		gap: 20px;
+	}
+
+	&__copyright {
+		font-size: 1.4rem;
+		text-align:center;
+	}
+
+	&__nav {
+
+		@media only screen and (max-width: $breakpoint-832) {
+			margin-top:1rem;
+		}
+
+		& ul {
+			list-style:none;
+			display:flex;
+
+			& li {
+				margin-left: 2rem;
+
+				& a {
+					text-decoration:none;
+					color:var(--color-white);
+					padding-bottom:0.8rem;
+
+					&:link, &:visited {
+						border-bottom:2px solid transparent;
+						transition:border-bottom 0.2s;
+
+					}
+
+					&:hover, &:active {
+						border-bottom:2px solid var(--color-primary);
+					}
+				}
+			}
+		}
+	}
+
+	&__small {
+		font-size: 1.2rem;
+		margin-top: 10px;
+	}
+
+	&__author {
+		text-decoration:none;
+		color:var(--color-white);
+	}
+}
