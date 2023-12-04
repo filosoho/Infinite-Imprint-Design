@@ -9,6 +9,11 @@
 
 	@media only screen and (max-width: $breakpoint-1060) {
 		height: 50vh;
+		background-position: 85% 35%;
+	}
+
+	@media only screen and (max-width: $breakpoint-400) {
+		height: 40vh;
 		background-position: 95% 48%;
 	}
 
@@ -140,6 +145,12 @@
 }
 
 //FOR EACH SECTION
+
+.section-header {
+	@media only screen and (max-width: $breakpoint-400) {
+		margin-top: -6rem;
+	}
+}
 
 .section-header h2 {
 	color:var(--color-primary);

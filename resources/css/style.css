@@ -40,6 +40,10 @@ body {
   @media only screen and (max-width: 66.25em) {
     .header {
       height: 50vh;
+      background-position: 85% 35%; } }
+  @media only screen and (max-width: 25em) {
+    .header {
+      height: 40vh;
       background-position: 95% 48%; } }
   .header__bar {
     display: flex;
@@ -136,6 +140,10 @@ body {
         font-size: 1.4rem;
         margin-bottom: 1.5rem;
         width: 45%; } }
+
+@media only screen and (max-width: 25em) {
+  .section-header {
+    margin-top: -6rem; } }
 
 .section-header h2 {
   color: var(--color-primary);
